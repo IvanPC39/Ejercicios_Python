@@ -36,7 +36,7 @@ my_tuple = list(my_tuple)
 print(type(my_tuple)) # Los type() son para mostrar que si cambio a lista y despues a tupla
 
 my_tuple[2] = "Negi"
-my_tuple.insert(1. "Turquesa")
+my_tuple.insert(1, "Turquesa")
 my_tuple = tuple(my_tuple)
 print(my_tuple)
 print(type(my_tuple))
