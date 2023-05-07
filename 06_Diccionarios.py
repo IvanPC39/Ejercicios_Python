@@ -40,6 +40,10 @@ print(my_dict.values()) #Muestra los valores dentro de las claves
 new_dict = dict.fromkeys(("Nombre", 1, "Piso"))
 print(new_dict) # Se crea un nuevo diccionario sin valores
 
+# Se puede hacer un diccionario con una lista
 my_list = ["Nombre", 1, "Piso"]
 new_dict = dict.fromkeys((my_list))
 print(new_dict)
+
+new_dict = dict.fromkeys(my_dict, ("Ivan", "Perez"))
+print(new_dict) # Así los datos se guardan en todas las claves
