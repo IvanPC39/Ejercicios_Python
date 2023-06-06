@@ -137,3 +137,80 @@ base = int(input("Base: "))
 height = int(input("Altura: "))
 
 poligono(base, height)
+
+
+"""
+DECIMAL A BINARIO (Fácil)
+Crea un programa se encargue de transformar un número
+decimal a binario sin utilizar funciones propias del lenguaje que lo hagan directamente.
+ """
+""" ## Lo dejo comentado para que más adelante que sepa resolverlo recuerdo lo que llegue a hacer en su momento
+print(10/2)
+
+def binario (number):
+    decimal_to_binary = number%2
+    
+    while decimal_to_binary != 0:
+        print(round(decimal_to_binary))
+        decimal_to_binary += decimal_to_binary % 2
+    
+
+
+number = int(input("numero decimal: "))
+
+binario(number)"""
+
+"""
+ELIMINANDO CARACTERES (Fácil)
+Crea una función que reciba dos cadenas como parámetro (str1, str2)
+e imprima otras dos cadenas como salida (out1, out2).
+- out1 contendrá todos los caracteres presentes en la str1 pero NO
+estén presentes en str2.
+- out2 contendrá todos los caracteres presentes en la str2 pero NO
+estén presentes en str1.
+"""
+
+"""str = "Hola"
+str_t = "Holo"
+
+if str != str_t:
+    out_one = str != str_t
+    print(out_one)
+else:
+    print("Son iguales")"""
+
+"""
+FACTORIAL RECURSIVO (Fácil)
+Escribe una función que calcule y retorne el factorial de un número dado
+de forma recursiva.
+"""
+# n! significa factorial del número
+
+def factorial_number (number):
+
+    new_number = number
+    original_number = number
+    
+    for i in range(1, number):
+
+        new_number = new_number - 1
+        result = number * new_number
+
+        number = result
+        new_number = new_number
+    
+    print(f"El numero factorial de {original_number} es: {result}")
+
+
+number = int(input("n!: "))
+
+factorial_number (number)
+
+
+"""
+¿ES UN NÚMERO DE ARMSTRONG? (Fácil)
+Escribe una función que calcule si un número dado es un número de Armstrong
+(o también llamado narcisista).
+Si no conoces qué es un número de Armstrong, debes buscar información 
+al respecto.
+"""
